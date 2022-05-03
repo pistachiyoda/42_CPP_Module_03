@@ -1,59 +1,54 @@
 #include "ClapTrap.hpp"
+#include "ScavTrap.hpp"
 
 int main()
 {
-    ClapTrap a("A");
-    ClapTrap copied_a(a);
-    ClapTrap c("C");
-    ClapTrap substituted_c = c;
+    ScavTrap s("S");
+    ScavTrap _s2("S2");
+    ScavTrap s2(_s2);
+    ScavTrap _s3("S3");
+    ScavTrap s3 = _s3;
+
+    std::cout << "~~ Fight of ScavTrap S ~~" << std::endl;
+    s.guardGate();
+    s.attack("Alice");
+    s.takeDamage(5);
+    s.beRepaired(3);
+    s.takeDamage(8);
+    s.attack("Alice");
+    s.takeDamage(8);
     std::cout << std::endl;
 
-    std::cout << "~~ Fight of ClapTrap A ~~" << std::endl;
-    a.attack("Alice");
-    a.takeDamage(5);
-    a.beRepaired(3);
-    a.takeDamage(8);
-    a.attack("Alice");
-    a.takeDamage(8);
+    std::cout << "~~ Fight of ClapTrap S2 ~~" << std::endl;
+    s.guardGate();
+    s2.attack("Bob");
+    s2.takeDamage(9);
+    s2.beRepaired(2);
+    s2.beRepaired(2);
+    s2.beRepaired(2);
+    s2.beRepaired(2);
+    s2.beRepaired(2);
+    s2.beRepaired(2);
+    s2.beRepaired(2);
+    s2.beRepaired(2);
+    s2.beRepaired(2);
+    s2.beRepaired(2);
     std::cout << std::endl;
 
-    std::cout << "~~ Fight of ClapTrap copied_a ~~" << std::endl;
-    copied_a.attack("Bob");
-    copied_a.takeDamage(9);
-    copied_a.beRepaired(2);
-    copied_a.beRepaired(2);
-    copied_a.beRepaired(2);
-    copied_a.beRepaired(2);
-    copied_a.beRepaired(2);
-    copied_a.beRepaired(2);
-    copied_a.beRepaired(2);
-    copied_a.beRepaired(2);
-    copied_a.beRepaired(2);
-    copied_a.beRepaired(2);
-    std::cout << std::endl;
-
-    std::cout << "~~ Fight of ClapTrap C ~~" << std::endl;
-    c.attack("Alice");
-    c.takeDamage(5);
-    c.beRepaired(3);
-    c.takeDamage(8);
-    c.attack("Alice");
-    c.takeDamage(8);
-    std::cout << std::endl;
-
-    std::cout << "~~ Fight of ClapTrap substituted_c ~~" << std::endl;
-    substituted_c.attack("Bob");
-    substituted_c.takeDamage(9);
-    substituted_c.beRepaired(2);
-    substituted_c.beRepaired(2);
-    substituted_c.beRepaired(2);
-    substituted_c.beRepaired(2);
-    substituted_c.beRepaired(2);
-    substituted_c.beRepaired(2);
-    substituted_c.beRepaired(2);
-    substituted_c.beRepaired(2);
-    substituted_c.beRepaired(2);
-    substituted_c.beRepaired(2);
+    std::cout << "~~ Fight of ClapTrap S3 ~~" << std::endl;
+    s.guardGate();
+    s3.attack("Bob");
+    s3.takeDamage(9);
+    s3.beRepaired(2);
+    s3.beRepaired(2);
+    s3.beRepaired(2);
+    s3.beRepaired(2);
+    s3.beRepaired(2);
+    s3.beRepaired(2);
+    s3.beRepaired(2);
+    s3.beRepaired(2);
+    s3.beRepaired(2);
+    s3.beRepaired(2);
     std::cout << std::endl;
     return 0;
 }

@@ -1,6 +1,11 @@
 #include "ClapTrap.hpp"
 
-ClapTrap::ClapTrap(std::string name) : name_(name), hitPoints_(10), energyPoints_(10), attackDamage_(0)
+ClapTrap::ClapTrap(
+    std::string name,
+    int hp,
+    int ep,
+    int ad
+) : name_(name), hitPoints_(hp), energyPoints_(ep), attackDamage_(ad)
 {
     std::cout << "=== ClapTrap constructor called. ===" << std::endl;
     std::cout << name_ << " is generated." << std::endl;
