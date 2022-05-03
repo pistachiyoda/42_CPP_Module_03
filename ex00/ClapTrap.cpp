@@ -9,6 +9,7 @@ ClapTrap::ClapTrap(std::string name) : name_(name), hitPoints_(10), energyPoints
 ClapTrap::~ClapTrap()
 {
     std::cout << "=== ClapTrap destructor called. ===" << std::endl;
+    std::cout << name_ << " is deleted." << std::endl;
 }
 
 ClapTrap::ClapTrap(const ClapTrap &claptrap)
@@ -54,11 +55,13 @@ bool ClapTrap::isActive()
     if (energyPoints_ <= 0)
     {
         std::cout << "Can’t do anything... because Energy point is 0." << std::endl;
+        std::cout << std::endl;
         return false;
     } 
     else if (hitPoints_ <= 0)
     {
         std::cout << "Can’t do anything... because Hit points is 0." << std::endl;
+        std::cout << std::endl;
         return false;
     }
     return true;
@@ -68,6 +71,7 @@ void ClapTrap::showStatus()
 {
     std::cout << std::setw(17) << "Hit Point: " << hitPoints_ << std::endl;
     std::cout << std::setw(17) << "Enerrgy Point: " << energyPoints_ << std::endl;
+    std::cout << std::endl;
 }
 
 // When ClapTrack attacks, it causes its target to lose <attack damage> hit points.

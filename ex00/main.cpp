@@ -6,6 +6,7 @@ int main()
     ClapTrap copied_a(a);
     ClapTrap c("C");
     ClapTrap substituted_c = c;
+    std::cout << std::endl;
 
     std::cout << "~~ Fight of ClapTrap A ~~" << std::endl;
     a.attack("Alice");
@@ -53,5 +54,6 @@ int main()
     substituted_c.beRepaired(2);
     substituted_c.beRepaired(2);
     substituted_c.beRepaired(2);
+    std::cout << std::endl;
     return 0;
 }
