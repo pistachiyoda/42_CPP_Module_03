@@ -10,6 +10,11 @@ ScavTrap::~ScavTrap()
     std::cout << "=== ScavTrap destructor called. ===" << std::endl;
 }
 
+ScavTrap::ScavTrap(const ScavTrap &scavtrap) : ClapTrap(scavtrap)
+{
+    std::cout << "=== ScavTrap copy constructor called. ===" << std::endl;
+}
+
 void ScavTrap::guardGate()
 {
     std::cout << name_ << " is now in Gate keeper mode." << std::endl;
