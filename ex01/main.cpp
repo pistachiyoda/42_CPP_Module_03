@@ -25,6 +25,7 @@ int main()
 
     std::cout << "~~ Fight of ScavTrap copied_a ~~" << std::endl;
     copied_a.showStatus();
+    copied_a.guardGate();
     copied_a.attack("Bob");
     copied_a.takeDamage(9);
     for (int i = 0; i < 50; i++)
@@ -48,6 +49,7 @@ int main()
 
     std::cout << "~~ Fight of ScavTrap substituted_c ~~" << std::endl;
     substituted_c.showStatus();
+    substituted_c.guardGate();
     substituted_c.attack("Bob");
     substituted_c.takeDamage(9);
     substituted_c.beRepaired(2);

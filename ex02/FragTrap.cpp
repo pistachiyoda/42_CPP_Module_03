@@ -18,6 +18,7 @@ FragTrap::FragTrap(const FragTrap &fragtrap) : ClapTrap(fragtrap)
 void FragTrap::highFivesGuys()
 {
     std::cout << name_ << " is requesting High five!" << std::endl;
+    std::cout << std::endl;
 }
 
 void FragTrap::attack(const std::string& target)
