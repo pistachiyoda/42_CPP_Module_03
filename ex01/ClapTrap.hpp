@@ -12,7 +12,6 @@ protected:
     unsigned int energyPoints_;
     unsigned int attackDamage_;
     bool isActive();
-    void showStatus();
 public:
     ClapTrap(std::string name, int hp = 10, int ep = 10, int ad = 0);
     ~ClapTrap();
@@ -21,10 +20,11 @@ public:
     std::string getName() const;
     unsigned int getHitPoint() const;
     unsigned int getEnergyPoint() const;
-    unsigned int getAttackDamage() const; 
+    unsigned int getAttackDamage() const;
     void attack(const std::string& target);
     void takeDamage(unsigned int amount);
     void beRepaired(unsigned int amount);
+    void showStatus();
 };
 
 #endif

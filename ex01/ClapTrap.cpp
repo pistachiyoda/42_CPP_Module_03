@@ -62,7 +62,7 @@ bool ClapTrap::isActive()
         std::cout << "Can’t do anything... because Energy point is 0." << std::endl;
         std::cout << std::endl;
         return false;
-    } 
+    }
     else if (hitPoints_ <= 0)
     {
         std::cout << "Can’t do anything... because Hit points is 0." << std::endl;
@@ -74,8 +74,9 @@ bool ClapTrap::isActive()
 
 void ClapTrap::showStatus()
 {
+    std::cout << "[Current status]" << std::endl;
     std::cout << std::setw(17) << "Hit Point: " << hitPoints_ << std::endl;
-    std::cout << std::setw(17) << "Enerrgy Point: " << energyPoints_ << std::endl;
+    std::cout << std::setw(17) << "Energy Point: " << energyPoints_ << std::endl;
     std::cout << std::endl;
 }
 
