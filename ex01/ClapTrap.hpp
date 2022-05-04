@@ -13,6 +13,7 @@ protected:
     unsigned int attackDamage_;
     bool isActive();
 public:
+    ClapTrap();
     ClapTrap(std::string name, int hp = 10, int ep = 10, int ad = 0);
     ~ClapTrap();
     ClapTrap(const ClapTrap &claptrap);

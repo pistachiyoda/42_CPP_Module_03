@@ -10,6 +10,7 @@ public:
     FragTrap(std::string name);
     ~FragTrap();
     FragTrap(const FragTrap &fragtrap);
+    FragTrap &operator=(const FragTrap &fragtrap);
     void highFivesGuys();
     void attack(const std::string& target);
 };
