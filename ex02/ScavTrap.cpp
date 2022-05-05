@@ -10,11 +10,9 @@ ScavTrap::~ScavTrap()
     std::cout << "=== ScavTrap destructor called. ===" << std::endl;
 }
 
-ScavTrap::ScavTrap(const ScavTrap &scavtrap)
+ScavTrap::ScavTrap(const ScavTrap &scavtrap) : ClapTrap(scavtrap)
 {
-    // 暗黙的に基底クラスのデフォルトコンストラクタが呼び出される
     std::cout << "=== ScavTrap copy constructor called. ===" << std::endl;
-    *this = scavtrap;
 }
 
 ScavTrap &ScavTrap::operator=(const ScavTrap &scavtrap)

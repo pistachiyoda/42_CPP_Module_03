@@ -10,10 +10,9 @@ FragTrap::~FragTrap()
     std::cout << "=== FragTrap destructor called. ===" << std::endl;
 }
 
-FragTrap::FragTrap(const FragTrap &fragtrap)
+FragTrap::FragTrap(const FragTrap &fragtrap) : ClapTrap(fragtrap)
 {
     std::cout << "=== FragTrap copy constructor called. ===" << std::endl;
-    *this = fragtrap;
 }
 
 FragTrap &FragTrap::operator=(const FragTrap &fragtrap)
