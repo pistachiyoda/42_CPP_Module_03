@@ -1,5 +1,10 @@
 #include "FragTrap.hpp"
 
+FragTrap::FragTrap()
+{
+    std::cout << "=== FragTrap default constructor called. ===" << std::endl;
+}
+
 FragTrap::FragTrap(std::string name) : ClapTrap(name, 100, 100, 30)
 {
     std::cout << "=== FragTrap constructor called. ===" << std::endl;

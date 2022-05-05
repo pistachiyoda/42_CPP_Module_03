@@ -1,5 +1,10 @@
 #include "ScavTrap.hpp"
 
+ScavTrap::ScavTrap()
+{
+    std::cout << "=== ScavTrap default constructor called. ===" << std::endl;
+}
+
 ScavTrap::ScavTrap(std::string name) : ClapTrap(name, 100, 50, 20)
 {
     std::cout << "=== ScavTrap constructor called. ===" << std::endl;
