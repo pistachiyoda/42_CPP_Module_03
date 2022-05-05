@@ -64,13 +64,13 @@ bool ClapTrap::isActive()
 {
     if (energyPoints_ <= 0)
     {
-        std::cout << "Can’t do anything... because Energy point is 0." << std::endl;
+        std::cout << "Can't do anything... because Energy point is 0." << std::endl;
         std::cout << std::endl;
         return false;
     }
     else if (hitPoints_ <= 0)
     {
-        std::cout << "Can’t do anything... because Hit points is 0." << std::endl;
+        std::cout << "Can't do anything... because Hit points is 0." << std::endl;
         std::cout << std::endl;
         return false;
     }
@@ -87,7 +87,7 @@ void ClapTrap::showStatus()
 
 // When ClapTrack attacks, it causes its target to lose <attack damage> hit points.
 // Attacking cost 1 energy point.
-// Can’t do anything if it has no hit points or energy points left.
+// Can't do anything if it has no hit points or energy points left.
 void ClapTrap::attack(const std::string& target)
 {
     if (!isActive())
@@ -112,7 +112,7 @@ void ClapTrap::takeDamage(unsigned int amount)
 
 // When ClapTrap repairs itself, it gets <amount> hit points back.
 // Repairing cost 1 energy point.
-// Can’t do anything if it has no hit points or energy points left.
+// Can't do anything if it has no hit points or energy points left.
 void ClapTrap::beRepaired(unsigned int amount)
 {
     if (!isActive())
